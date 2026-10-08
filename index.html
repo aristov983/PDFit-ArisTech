@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDFit - ArisLabs | Aristech</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+            --badge-bg: #eff6ff;
+            --badge-text: #1d4ed8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 640px;
+            width: 100%;
+            background: var(--bg-card);
+            padding: 2.5rem 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .brand-badge {
+            display: inline-block;
+            background-color: var(--badge-bg);
+            color: var(--badge-text);
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            margin-bottom: 1.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+        }
+
+        p.subtitle {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            margin-bottom: 1.75rem;
+            font-weight: 400;
+        }
+
+        .description-box {
+            text-align: left;
+            background-color: #f1f5f9;
+            padding: 1.25rem 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            font-size: 0.975rem;
+            color: #334155;
+            border-left: 4px solid var(--primary);
+        }
+
+        .description-box ul {
+            margin-top: 0.75rem;
+            padding-left: 1.25rem;
+        }
+
+        .description-box li {
+            margin-bottom: 0.5rem;
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: column;
+            gap: 0.875rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 480px) {
+            .actions {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.85rem 1.5rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .btn-disabled {
+            background-color: #e2e8f0;
+            color: #94a3b8;
+            cursor: not-allowed;
+            border-color: #cbd5e1;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--badge-bg);
+            border-color: var(--primary-hover);
+            color: var(--primary-hover);
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        footer strong {
+            color: var(--text-main);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="brand-badge">ArisLabs</div>
+        <h1>PDFit</h1>
+        <p class="subtitle">Genera tus rutinas de entrenamiento en PDF de forma rápida, local y privada.</p>
+
+        <div class="description-box">
+            <p><strong>¿Qué es PDFit?</strong></p>
+            <p>Es una aplicación móvil diseñada para crear documentos PDF personalizados seleccionando ejercicios de un repositorio público. Todo el proceso se ejecuta <strong>100% de forma local</strong> en tu dispositivo.</p>
+            <ul>
+                <li><strong>Privacidad y control:</strong> Puedes guardar tus PDFs en el almacenamiento interno o compartirlos fácilmente mediante la función nativa de Android.</li>
+                <li><strong>Programa ArisLabs:</strong> Este proyecto forma parte de <em>ArisLabs</em>, una iniciativa donde desarrollamos aplicaciones prácticas con el objetivo de formar y capacitar a nuestro equipo técnico.</li>
+                <li><strong>En constante evolución:</strong> Aunque la aplicación ya es totalmente funcional, continuaremos puliéndola y añadiendo mejoras paulatinamente.</li>
+            </ul>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-disabled" disabled>Ver en Google Play (Próximamente)</button>
+            <a href="privacy.html" class="btn btn-outline">Política de Privacidad</a>
+        </div>
+
+        <footer>
+            <p>Un proyecto desarrollado por <strong>ArisTech</strong></p>
+        </footer>
+    </div>
+
+</body>
+</html>
